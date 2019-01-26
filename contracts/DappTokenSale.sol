@@ -13,6 +13,8 @@ contract DappTokenSale {
     uint256 _amount
   );
 
+  function() external payable {}
+
   constructor(DappToken _tokenContract, uint256 _tokenPrice) public {
     admin = msg.sender;
     tokenContract = _tokenContract;
